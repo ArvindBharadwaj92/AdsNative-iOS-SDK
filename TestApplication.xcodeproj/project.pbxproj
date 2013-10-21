@@ -19,8 +19,6 @@
 		DE90779D1815AF94000C9A22 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE90779C1815AF94000C9A22 /* XCTest.framework */; };
 		DE90779E1815AF94000C9A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE90777D1815AF94000C9A22 /* Foundation.framework */; };
 		DE90779F1815AF94000C9A22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9077811815AF94000C9A22 /* UIKit.framework */; };
-		DE9077A71815AF95000C9A22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE9077A51815AF95000C9A22 /* InfoPlist.strings */; };
-		DE9077A91815AF95000C9A22 /* TestApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9077A81815AF95000C9A22 /* TestApplicationTests.m */; };
 		DE9077C11815B119000C9A22 /* SVWebViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE9077B31815B119000C9A22 /* SVWebViewController.strings */; };
 		DE9077C21815B119000C9A22 /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9077BB1815B119000C9A22 /* SVModalWebViewController.m */; };
 		DE9077C31815B119000C9A22 /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE9077BC1815B119000C9A22 /* SVWebViewController.bundle */; };
@@ -97,9 +95,6 @@
 		DE9077951815AF94000C9A22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE90779B1815AF94000C9A22 /* TestApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE90779C1815AF94000C9A22 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DE9077A41815AF95000C9A22 /* TestApplicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApplicationTests-Info.plist"; sourceTree = "<group>"; };
-		DE9077A61815AF95000C9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DE9077A81815AF95000C9A22 /* TestApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestApplicationTests.m; sourceTree = "<group>"; };
 		DE9077B41815B119000C9A22 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
 		DE9077B51815B119000C9A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
 		DE9077B61815B119000C9A22 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
@@ -228,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				DE9077831815AF94000C9A22 /* TestApplication */,
-				DE9077A21815AF95000C9A22 /* TestApplicationTests */,
 				DE90777C1815AF94000C9A22 /* Frameworks */,
 				DE90777B1815AF94000C9A22 /* Products */,
 			);
@@ -292,24 +286,6 @@
 				DE9077861815AF94000C9A22 /* InfoPlist.strings */,
 				DE9077891815AF94000C9A22 /* main.m */,
 				DE90778B1815AF94000C9A22 /* TestApplication-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DE9077A21815AF95000C9A22 /* TestApplicationTests */ = {
-			isa = PBXGroup;
-			children = (
-				DE9077A81815AF95000C9A22 /* TestApplicationTests.m */,
-				DE9077A31815AF95000C9A22 /* Supporting Files */,
-			);
-			path = TestApplicationTests;
-			sourceTree = "<group>";
-		};
-		DE9077A31815AF95000C9A22 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DE9077A41815AF95000C9A22 /* TestApplicationTests-Info.plist */,
-				DE9077A51815AF95000C9A22 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -582,7 +558,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9077A71815AF95000C9A22 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +592,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9077A91815AF95000C9A22 /* TestApplicationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,14 +620,6 @@
 				DE9077901815AF94000C9A22 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DE9077A51815AF95000C9A22 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE9077A61815AF95000C9A22 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		DE9077B31815B119000C9A22 /* SVWebViewController.strings */ = {
