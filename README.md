@@ -30,12 +30,12 @@ Installing AdsNative in your XCode project
 
 6.Repeat the process for `SystemConfiguration.Framework` 
 
-Making Calls to AdsNative
+Using AdsNative APIs
 -------------------------
 
 1. Add `#import "Adsnative.h"` in your header file whenever you plan to use AdsNative 
 2. Create an ANAdRequest object initializing it with zone id provided to you. You'll have to pass this object to most of requests you make to AdsNative
-  ```ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"D8TqdJ7Nc8XT5cKIzXqDayoxrrTlOwSxRUX9gslp"];```
+  ```ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"INSERT-YOUR-ZONE-ID-HERE"];```
 3. To request for sponsored content make a call to following non-blocking function,
 
     ```
