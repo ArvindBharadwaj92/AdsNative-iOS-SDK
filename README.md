@@ -14,21 +14,21 @@ Installing AdsNative to your XCode project
 
 ![alt text](https://s3.amazonaws.com/adsnative-public/images/add-folder.png "")
   
-3. Check "Copy items...", select "Create groups for.." and "Finish"
+3.Check "Copy items...", select "Create groups for.." and "Finish"
 
 ![alt text](https://s3.amazonaws.com/adsnative-public/images/copy-project.png "")
 
-4. It should look something like this...
+4.It should look something like this...
 
 ![alt text](https://s3.amazonaws.com/adsnative-public/images/final.png "")
 
-5. Under "Targets -> Build Phases", add the `AdSupport.Framework`
+5.Under "Targets -> Build Phases", add the `AdSupport.Framework`
 
 ![alt text](https://s3.amazonaws.com/adsnative-public/images/add-frameworks.png "")
 
 ![alt text](https://s3.amazonaws.com/adsnative-public/images/lookup.png "")
 
-6. Repeat the process for `SystemConfiguration.Framework` 
+6.Repeat the process for `SystemConfiguration.Framework` 
 
 Making Calls to AdsNative
 -------------------------
@@ -47,4 +47,32 @@ Making Calls to AdsNative
             // Oops ad request was not successful
         }];
     ```
+4. One important thing to note is that, whenever you create UIView or any UIView based class using the information provided by above ANSponsoredStory object you will have to attach that view to ANSponsoredStory object. Same goes for ViewController or native browser used by the app to open the sponsored content. This allows AdsNative track various events occuring on the sponsored content. 
 
+Following code snippet shows an example of code that can be used in a table view,
+
+
+    - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+    {
+        if([[news objectAtIndex:indexPath.row] isKindOfClass:[ANSponsoredStory class]]) {
+            ANSponsoredStory *sponsoredStory = [news objectAtIndex:indexPath.row];
+            //Configure the ANSponsoredStory on select/tap action here.
+            HandleSelectBlock handleSelectBlock = ^(){
+                //Begin: Your code - Open the full content view of your choice
+                NSLog(@"click handler in block");
+                SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithAddress:sponsoredStory.url];
+                [self presentModalViewController:webViewController animated:YES];
+                //End: Your code
+                
+                //This line is important and should be called in all cases except for video ads. Pass the full content view as an argument
+                if([sponsoredStory.type  isEqual: @"story"]){
+                    [sponsoredStory attachFullContentToView:webViewController.view];
+                }
+            };
+            [sponsoredStory attachToView:cell onSelect:handleSelectBlock];
+        }
+    }
+    
+  Notice that the user click/tap handler also needs to be passed to the attachToView function, which will handle the user's tap event and take your desired action typically open a native browser.
+  
+You can look at the TestApplication provided in project for detailed example and to best use AdsNative SDK.
