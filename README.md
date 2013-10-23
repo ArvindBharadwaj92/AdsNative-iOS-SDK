@@ -8,7 +8,7 @@ Installing AdsNative in your XCode project
 
   `git clone git@github.com:picatcha/AdsNative-iOS-SDK.git`
   
-  OR download the zip by clicking on the button shown on right on Github page.
+  OR download the zip by clicking on the button shown on right of the Github page.
     
 2. Drag and drop "AdsNative" folder from the repository to your project's root folder
 
