@@ -38,7 +38,7 @@ Making Calls to AdsNative
   ```ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"D8TqdJ7Nc8XT5cKIzXqDayoxrrTlOwSxRUX9gslp"];```
 3. To request for sponsored content make a call to following non-blocking function,
 
-
+    ```
     [ANSponsoredStory loadRequest:request
       onSuccess:^(ANSponsoredStory *story) {
             NSLog(@"Title: %@", story.title);
@@ -46,5 +46,5 @@ Making Calls to AdsNative
       onError:^(NSError *error) {
             // Oops ad request was not successful
         }];
-
+    ```
 
