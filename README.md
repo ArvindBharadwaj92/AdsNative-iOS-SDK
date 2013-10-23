@@ -1,7 +1,7 @@
 AdsNative-iOS-SDK
 =================
 
-Installing AdsNative to your XCode project
+Installing AdsNative in your XCode project
 ------------------------------------------
 
 1. Clone the git repository into your desired folder 
