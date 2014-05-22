@@ -59,32 +59,34 @@
 
 #pragma mark - DataSource
 
+/** Fetch AdsNative native ads **/
 -(void)fetchAds {
     ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"D8TqdJ7Nc8XT5cKIzXqDayoxrrTlOwSxRUX9gslp"];
     [ANSponsoredStory loadRequest:request
-                        onSuccess:^(ANSponsoredStory *story) {
-                            if([self.news count]) {
-                                [self.news insertObject:story atIndex:2];
-                            } else {
-                                [self.news addObject:story];
-                            }
-                            [self.tableView reloadData];
-                        }
-                        onError:^(NSError *error) {
-                              // Oops ad request was not successful
-                        }];
+        onSuccess:^(ANSponsoredStory *story) {
+            if([self.news count]) {
+                [self.news insertObject:story atIndex:1]; //Set the position at which the native ad should be shown
+            } else {
+                [self.news addObject:story];
+            }
+            [self.tableView reloadData];
+        }
+        onError:^(NSError *error) {
+              // Oops ad request was not successful
+        }
+    ];
 }
 
 - (void)fetchNews {
     [self.refreshControl beginRefreshing];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData* data = [NSData dataWithContentsOfURL:
-                        [NSURL URLWithString: @"http://api.nytimes.com/svc/mostpopular/v2/mostshared/all-sections/7.json?api-key=23a6fda4c6eef1f5fdb9ae956f1560c8:4:68269115"]];
+                        [NSURL URLWithString: @"https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://feeds.abcnews.com/abcnews/politicsheadlines"]];
         NSError* error;
 
-        NSArray *news_obtained = [[NSJSONSerialization JSONObjectWithData:data
+        NSArray *news_obtained = [[[[NSJSONSerialization JSONObjectWithData:data
                                                  options:kNilOptions
-                                                   error:&error] objectForKey:@"results"];
+                                                   error:&error] objectForKey:@"responseData"] objectForKey:@"feed"] objectForKey:@"entries"];
         [news removeAllObjects];
         [news addObjectsFromArray:news_obtained];
         
@@ -110,6 +112,8 @@
     return 90.0;
 }
 
+
+/** Whenever ad is to be displayed, let AdsNative know that ad is being displayed and at the same time what on tap/click action should be **/
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if([[news objectAtIndex:indexPath.row] isKindOfClass:[ANSponsoredStory class]]) {
         ANSponsoredStory *sponsoredStory = [news objectAtIndex:indexPath.row];
@@ -126,6 +130,7 @@
                 [sponsoredStory attachFullContentToView:webViewController.view];
             }
         };
+        //Basically notify the ANSponsoredStory that ad is getting displayed
         [sponsoredStory attachToView:cell onSelect:handleSelectBlock];
     } else {
         [ANSponsoredStory detachSponsoredStoriesFromView:cell];
@@ -146,6 +151,7 @@
     NSString *name = nil;
     NSString *story_image_url = nil;
     if([[news objectAtIndex:indexPath.row] isKindOfClass:[ANSponsoredStory class]]) {
+        /** Set the information provided by ANSponsoredStory, such as Title, Image, etc. to create your view **/
         ANSponsoredStory *sponsoredStory = [news objectAtIndex:indexPath.row];
         text = sponsoredStory.title;
         name = [NSString stringWithFormat:@"%@ %@", sponsoredStory.promoted_by_tag, sponsoredStory.promoted_by];
@@ -154,9 +160,10 @@
     } else {
         NSDictionary *news_item = [news objectAtIndex:indexPath.row];
         text = [news_item objectForKey:@"title"];
-        name = [news_item objectForKey:@"byline"];
+        name = [news_item objectForKey:@"author"];
         @try {
-            story_image_url = [[[[[news_item objectForKey:@"media"] objectAtIndex:0] objectForKey:@"media-metadata"] objectAtIndex:0] objectForKey:@"url"];
+            //NSLog(@"%@", [[[news_item objectForKey:@"mediaGroups"] objectAtIndex:0] objectForKey:@"contents"]);
+            story_image_url = [[[[[[[news_item objectForKey:@"mediaGroups"] objectAtIndex:0] objectForKey:@"contents"] objectAtIndex:0] objectForKey:@"thumbnails"] objectAtIndex:0] objectForKey:@"url"];
         }
         @catch (NSException *exception) {
             //NSLog(@"image not found");
