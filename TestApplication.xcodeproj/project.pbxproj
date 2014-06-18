@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE4A9A26192DA32E00B65481 /* libAdsNative-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4A9A24192DA2E300B65481 /* libAdsNative-.a */; };
 		DE90777E1815AF94000C9A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE90777D1815AF94000C9A22 /* Foundation.framework */; };
 		DE9077801815AF94000C9A22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE90777F1815AF94000C9A22 /* CoreGraphics.framework */; };
 		DE9077821815AF94000C9A22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9077811815AF94000C9A22 /* UIKit.framework */; };
@@ -66,6 +65,8 @@
 		DE9078CC1815BE7C000C9A22 /* twitter_egg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9078BB1815BE7C000C9A22 /* twitter_egg@2x.png */; };
 		DE9078CD1815BE7C000C9A22 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9078BC1815BE7C000C9A22 /* youtube.png */; };
 		DE9078CE1815BE7C000C9A22 /* youtube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9078BD1815BE7C000C9A22 /* youtube@2x.png */; };
+		DEB1D41019512CDE0051834D /* libAdsNative-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB1D40F19512CDE0051834D /* libAdsNative-.a */; };
+		DEB1D41119512CDE0051834D /* libAdsNative-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB1D40F19512CDE0051834D /* libAdsNative-.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,23 +80,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE4A9A14192DA2E300B65481 /* AdsNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsNative.h; sourceTree = "<group>"; };
-		DE4A9A15192DA2E300B65481 /* ANAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAdRequest.h; sourceTree = "<group>"; };
-		DE4A9A16192DA2E300B65481 /* ANAsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAsyncURLConnection.h; sourceTree = "<group>"; };
-		DE4A9A17192DA2E300B65481 /* ANDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDeviceInfo.h; sourceTree = "<group>"; };
-		DE4A9A18192DA2E300B65481 /* ANFullStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFullStoryInteractionView.h; sourceTree = "<group>"; };
-		DE4A9A19192DA2E300B65481 /* ANGetSponsoredStoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryRequest.h; sourceTree = "<group>"; };
-		DE4A9A1A192DA2E300B65481 /* ANGetSponsoredStoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryResponse.h; sourceTree = "<group>"; };
-		DE4A9A1B192DA2E300B65481 /* ANJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANJSONKit.h; sourceTree = "<group>"; };
-		DE4A9A1C192DA2E300B65481 /* ANLogImpressionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogImpressionRequest.h; sourceTree = "<group>"; };
-		DE4A9A1D192DA2E300B65481 /* ANLogTimeSpentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogTimeSpentRequest.h; sourceTree = "<group>"; };
-		DE4A9A1E192DA2E300B65481 /* ANReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANReachability.h; sourceTree = "<group>"; };
-		DE4A9A1F192DA2E300B65481 /* ANResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANResponse.h; sourceTree = "<group>"; };
-		DE4A9A20192DA2E300B65481 /* ANServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProvider.h; sourceTree = "<group>"; };
-		DE4A9A21192DA2E300B65481 /* ANServiceProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProviderProtocol.h; sourceTree = "<group>"; };
-		DE4A9A22192DA2E300B65481 /* ANSponsoredStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStory.h; sourceTree = "<group>"; };
-		DE4A9A23192DA2E300B65481 /* ANSponsoredStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStoryInteractionView.h; sourceTree = "<group>"; };
-		DE4A9A24192DA2E300B65481 /* libAdsNative-.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdsNative-.a"; sourceTree = "<group>"; };
 		DE90777A1815AF94000C9A22 /* TestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE90777D1815AF94000C9A22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE90777F1815AF94000C9A22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +167,23 @@
 		DE9078BB1815BE7C000C9A22 /* twitter_egg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_egg@2x.png"; sourceTree = "<group>"; };
 		DE9078BC1815BE7C000C9A22 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
 		DE9078BD1815BE7C000C9A22 /* youtube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube@2x.png"; sourceTree = "<group>"; };
+		DEB1D3FF19512CDE0051834D /* AdsNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsNative.h; sourceTree = "<group>"; };
+		DEB1D40019512CDE0051834D /* ANAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAdRequest.h; sourceTree = "<group>"; };
+		DEB1D40119512CDE0051834D /* ANAsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAsyncURLConnection.h; sourceTree = "<group>"; };
+		DEB1D40219512CDE0051834D /* ANDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDeviceInfo.h; sourceTree = "<group>"; };
+		DEB1D40319512CDE0051834D /* ANFullStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFullStoryInteractionView.h; sourceTree = "<group>"; };
+		DEB1D40419512CDE0051834D /* ANGetSponsoredStoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryRequest.h; sourceTree = "<group>"; };
+		DEB1D40519512CDE0051834D /* ANGetSponsoredStoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryResponse.h; sourceTree = "<group>"; };
+		DEB1D40619512CDE0051834D /* ANJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANJSONKit.h; sourceTree = "<group>"; };
+		DEB1D40719512CDE0051834D /* ANLogImpressionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogImpressionRequest.h; sourceTree = "<group>"; };
+		DEB1D40819512CDE0051834D /* ANLogTimeSpentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogTimeSpentRequest.h; sourceTree = "<group>"; };
+		DEB1D40919512CDE0051834D /* ANReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANReachability.h; sourceTree = "<group>"; };
+		DEB1D40A19512CDE0051834D /* ANResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANResponse.h; sourceTree = "<group>"; };
+		DEB1D40B19512CDE0051834D /* ANServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProvider.h; sourceTree = "<group>"; };
+		DEB1D40C19512CDE0051834D /* ANServiceProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProviderProtocol.h; sourceTree = "<group>"; };
+		DEB1D40D19512CDE0051834D /* ANSponsoredStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStory.h; sourceTree = "<group>"; };
+		DEB1D40E19512CDE0051834D /* ANSponsoredStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStoryInteractionView.h; sourceTree = "<group>"; };
+		DEB1D40F19512CDE0051834D /* libAdsNative-.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdsNative-.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +200,7 @@
 				DE9077D81815B19F000C9A22 /* AdSupport.framework in Frameworks */,
 				DE9077D61815B197000C9A22 /* Social.framework in Frameworks */,
 				DE9077D41815B192000C9A22 /* MediaPlayer.framework in Frameworks */,
-				DE4A9A26192DA32E00B65481 /* libAdsNative-.a in Frameworks */,
+				DEB1D41019512CDE0051834D /* libAdsNative-.a in Frameworks */,
 				DE9077D21815B188000C9A22 /* MessageUI.framework in Frameworks */,
 				DE9077821815AF94000C9A22 /* UIKit.framework in Frameworks */,
 				DE90777E1815AF94000C9A22 /* Foundation.framework in Frameworks */,
@@ -211,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE90779D1815AF94000C9A22 /* XCTest.framework in Frameworks */,
+				DEB1D41119512CDE0051834D /* libAdsNative-.a in Frameworks */,
 				DE90779F1815AF94000C9A22 /* UIKit.framework in Frameworks */,
 				DE90779E1815AF94000C9A22 /* Foundation.framework in Frameworks */,
 			);
@@ -219,35 +221,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE4A9A13192DA2E300B65481 /* AdsNative */ = {
-			isa = PBXGroup;
-			children = (
-				DE4A9A14192DA2E300B65481 /* AdsNative.h */,
-				DE4A9A15192DA2E300B65481 /* ANAdRequest.h */,
-				DE4A9A16192DA2E300B65481 /* ANAsyncURLConnection.h */,
-				DE4A9A17192DA2E300B65481 /* ANDeviceInfo.h */,
-				DE4A9A18192DA2E300B65481 /* ANFullStoryInteractionView.h */,
-				DE4A9A19192DA2E300B65481 /* ANGetSponsoredStoryRequest.h */,
-				DE4A9A1A192DA2E300B65481 /* ANGetSponsoredStoryResponse.h */,
-				DE4A9A1B192DA2E300B65481 /* ANJSONKit.h */,
-				DE4A9A1C192DA2E300B65481 /* ANLogImpressionRequest.h */,
-				DE4A9A1D192DA2E300B65481 /* ANLogTimeSpentRequest.h */,
-				DE4A9A1E192DA2E300B65481 /* ANReachability.h */,
-				DE4A9A1F192DA2E300B65481 /* ANResponse.h */,
-				DE4A9A20192DA2E300B65481 /* ANServiceProvider.h */,
-				DE4A9A21192DA2E300B65481 /* ANServiceProviderProtocol.h */,
-				DE4A9A22192DA2E300B65481 /* ANSponsoredStory.h */,
-				DE4A9A23192DA2E300B65481 /* ANSponsoredStoryInteractionView.h */,
-				DE4A9A24192DA2E300B65481 /* libAdsNative-.a */,
-			);
-			name = AdsNative;
-			path = "../../../../Library/Developer/Xcode/DerivedData/AdsNative-hjqffmdwbtsqxfalluaxzvbeornw/Build/Products/AdsNative";
-			sourceTree = "<group>";
-		};
 		DE9077711815AF94000C9A22 = {
 			isa = PBXGroup;
 			children = (
-				DE4A9A13192DA2E300B65481 /* AdsNative */,
+				DEB1D3FE19512CDE0051834D /* AdsNative */,
 				DE9077831815AF94000C9A22 /* TestApplication */,
 				DE90777C1815AF94000C9A22 /* Frameworks */,
 				DE90777B1815AF94000C9A22 /* Products */,
@@ -441,6 +418,30 @@
 				DE9078BD1815BE7C000C9A22 /* youtube@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		DEB1D3FE19512CDE0051834D /* AdsNative */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1D3FF19512CDE0051834D /* AdsNative.h */,
+				DEB1D40019512CDE0051834D /* ANAdRequest.h */,
+				DEB1D40119512CDE0051834D /* ANAsyncURLConnection.h */,
+				DEB1D40219512CDE0051834D /* ANDeviceInfo.h */,
+				DEB1D40319512CDE0051834D /* ANFullStoryInteractionView.h */,
+				DEB1D40419512CDE0051834D /* ANGetSponsoredStoryRequest.h */,
+				DEB1D40519512CDE0051834D /* ANGetSponsoredStoryResponse.h */,
+				DEB1D40619512CDE0051834D /* ANJSONKit.h */,
+				DEB1D40719512CDE0051834D /* ANLogImpressionRequest.h */,
+				DEB1D40819512CDE0051834D /* ANLogTimeSpentRequest.h */,
+				DEB1D40919512CDE0051834D /* ANReachability.h */,
+				DEB1D40A19512CDE0051834D /* ANResponse.h */,
+				DEB1D40B19512CDE0051834D /* ANServiceProvider.h */,
+				DEB1D40C19512CDE0051834D /* ANServiceProviderProtocol.h */,
+				DEB1D40D19512CDE0051834D /* ANSponsoredStory.h */,
+				DEB1D40E19512CDE0051834D /* ANSponsoredStoryInteractionView.h */,
+				DEB1D40F19512CDE0051834D /* libAdsNative-.a */,
+			);
+			path = AdsNative;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -722,6 +723,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApplication/TestApplication-Prefix.pch";
 				INFOPLIST_FILE = "TestApplication/TestApplication-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/kuldeepkapade/Dropbox/code/adsnative_iOS_SDK_Public/TestApplication/AdsNative,
@@ -731,6 +733,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -744,6 +747,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApplication/TestApplication-Prefix.pch";
 				INFOPLIST_FILE = "TestApplication/TestApplication-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/kuldeepkapade/Dropbox/code/adsnative_iOS_SDK_Public/TestApplication/AdsNative,
@@ -753,6 +757,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -774,6 +779,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TestApplicationTests/TestApplicationTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kuldeepkapade/Dropbox/code/adsnative_iOS_SDK_Public/AdsNative_iOS_SDK/AdsNative,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -793,6 +802,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApplication/TestApplication-Prefix.pch";
 				INFOPLIST_FILE = "TestApplicationTests/TestApplicationTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kuldeepkapade/Dropbox/code/adsnative_iOS_SDK_Public/AdsNative_iOS_SDK/AdsNative,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
