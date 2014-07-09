@@ -156,6 +156,7 @@
         text = sponsoredStory.title;
         name = [NSString stringWithFormat:@"%@ %@", sponsoredStory.promoted_by_tag, sponsoredStory.promoted_by];
         story_image_url = sponsoredStory.thumbnail_url;
+        //NSLog(@"brand image - %@", sponsoredStory.brand_image);
         cell.contentView.backgroundColor = [UIColor colorWithRed:1.0 green:0.98039 blue:0.9411 alpha:1];
     } else {
         NSDictionary *news_item = [news objectAtIndex:indexPath.row];
