@@ -65,8 +65,7 @@
 		DE9078CC1815BE7C000C9A22 /* twitter_egg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9078BB1815BE7C000C9A22 /* twitter_egg@2x.png */; };
 		DE9078CD1815BE7C000C9A22 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9078BC1815BE7C000C9A22 /* youtube.png */; };
 		DE9078CE1815BE7C000C9A22 /* youtube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE9078BD1815BE7C000C9A22 /* youtube@2x.png */; };
-		DE9A07C6196D0EBA001944D6 /* libAdsNative-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9A07C5196D0EBA001944D6 /* libAdsNative-.a */; };
-		DE9A07C7196D0EBA001944D6 /* libAdsNative-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9A07C5196D0EBA001944D6 /* libAdsNative-.a */; };
+		DEF9A3411977063800B4DC5E /* libAdsNative-.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF9A3401977063800B4DC5E /* libAdsNative-.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,22 +166,22 @@
 		DE9078BB1815BE7C000C9A22 /* twitter_egg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_egg@2x.png"; sourceTree = "<group>"; };
 		DE9078BC1815BE7C000C9A22 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
 		DE9078BD1815BE7C000C9A22 /* youtube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube@2x.png"; sourceTree = "<group>"; };
-		DE9A07B6196D0EBA001944D6 /* AdsNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsNative.h; sourceTree = "<group>"; };
-		DE9A07B7196D0EBA001944D6 /* ANAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAdRequest.h; sourceTree = "<group>"; };
-		DE9A07B8196D0EBA001944D6 /* ANAsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAsyncURLConnection.h; sourceTree = "<group>"; };
-		DE9A07B9196D0EBA001944D6 /* ANDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDeviceInfo.h; sourceTree = "<group>"; };
-		DE9A07BA196D0EBA001944D6 /* ANFullStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFullStoryInteractionView.h; sourceTree = "<group>"; };
-		DE9A07BB196D0EBA001944D6 /* ANGetSponsoredStoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryRequest.h; sourceTree = "<group>"; };
-		DE9A07BC196D0EBA001944D6 /* ANGetSponsoredStoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryResponse.h; sourceTree = "<group>"; };
-		DE9A07BD196D0EBA001944D6 /* ANLogImpressionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogImpressionRequest.h; sourceTree = "<group>"; };
-		DE9A07BE196D0EBA001944D6 /* ANLogTimeSpentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogTimeSpentRequest.h; sourceTree = "<group>"; };
-		DE9A07BF196D0EBA001944D6 /* ANReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANReachability.h; sourceTree = "<group>"; };
-		DE9A07C0196D0EBA001944D6 /* ANResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANResponse.h; sourceTree = "<group>"; };
-		DE9A07C1196D0EBA001944D6 /* ANServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProvider.h; sourceTree = "<group>"; };
-		DE9A07C2196D0EBA001944D6 /* ANServiceProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProviderProtocol.h; sourceTree = "<group>"; };
-		DE9A07C3196D0EBA001944D6 /* ANSponsoredStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStory.h; sourceTree = "<group>"; };
-		DE9A07C4196D0EBA001944D6 /* ANSponsoredStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStoryInteractionView.h; sourceTree = "<group>"; };
-		DE9A07C5196D0EBA001944D6 /* libAdsNative-.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdsNative-.a"; sourceTree = "<group>"; };
+		DEF9A3311977063800B4DC5E /* AdsNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsNative.h; sourceTree = "<group>"; };
+		DEF9A3321977063800B4DC5E /* ANAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAdRequest.h; sourceTree = "<group>"; };
+		DEF9A3331977063800B4DC5E /* ANAsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAsyncURLConnection.h; sourceTree = "<group>"; };
+		DEF9A3341977063800B4DC5E /* ANDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDeviceInfo.h; sourceTree = "<group>"; };
+		DEF9A3351977063800B4DC5E /* ANFullStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFullStoryInteractionView.h; sourceTree = "<group>"; };
+		DEF9A3361977063800B4DC5E /* ANGetSponsoredStoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryRequest.h; sourceTree = "<group>"; };
+		DEF9A3371977063800B4DC5E /* ANGetSponsoredStoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryResponse.h; sourceTree = "<group>"; };
+		DEF9A3381977063800B4DC5E /* ANLogImpressionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogImpressionRequest.h; sourceTree = "<group>"; };
+		DEF9A3391977063800B4DC5E /* ANLogTimeSpentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogTimeSpentRequest.h; sourceTree = "<group>"; };
+		DEF9A33A1977063800B4DC5E /* ANReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANReachability.h; sourceTree = "<group>"; };
+		DEF9A33B1977063800B4DC5E /* ANResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANResponse.h; sourceTree = "<group>"; };
+		DEF9A33C1977063800B4DC5E /* ANServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProvider.h; sourceTree = "<group>"; };
+		DEF9A33D1977063800B4DC5E /* ANServiceProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProviderProtocol.h; sourceTree = "<group>"; };
+		DEF9A33E1977063800B4DC5E /* ANSponsoredStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStory.h; sourceTree = "<group>"; };
+		DEF9A33F1977063800B4DC5E /* ANSponsoredStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSponsoredStoryInteractionView.h; sourceTree = "<group>"; };
+		DEF9A3401977063800B4DC5E /* libAdsNative-.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdsNative-.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +198,7 @@
 				DE9077D81815B19F000C9A22 /* AdSupport.framework in Frameworks */,
 				DE9077D61815B197000C9A22 /* Social.framework in Frameworks */,
 				DE9077D41815B192000C9A22 /* MediaPlayer.framework in Frameworks */,
-				DE9A07C6196D0EBA001944D6 /* libAdsNative-.a in Frameworks */,
+				DEF9A3411977063800B4DC5E /* libAdsNative-.a in Frameworks */,
 				DE9077D21815B188000C9A22 /* MessageUI.framework in Frameworks */,
 				DE9077821815AF94000C9A22 /* UIKit.framework in Frameworks */,
 				DE90777E1815AF94000C9A22 /* Foundation.framework in Frameworks */,
@@ -211,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE90779D1815AF94000C9A22 /* XCTest.framework in Frameworks */,
-				DE9A07C7196D0EBA001944D6 /* libAdsNative-.a in Frameworks */,
 				DE90779F1815AF94000C9A22 /* UIKit.framework in Frameworks */,
 				DE90779E1815AF94000C9A22 /* Foundation.framework in Frameworks */,
 			);
@@ -223,7 +221,7 @@
 		DE9077711815AF94000C9A22 = {
 			isa = PBXGroup;
 			children = (
-				DE9A07B5196D0EBA001944D6 /* AdsNative */,
+				DEF9A3301977063800B4DC5E /* AdsNative */,
 				DE9077831815AF94000C9A22 /* TestApplication */,
 				DE90777C1815AF94000C9A22 /* Frameworks */,
 				DE90777B1815AF94000C9A22 /* Products */,
@@ -419,25 +417,25 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		DE9A07B5196D0EBA001944D6 /* AdsNative */ = {
+		DEF9A3301977063800B4DC5E /* AdsNative */ = {
 			isa = PBXGroup;
 			children = (
-				DE9A07B6196D0EBA001944D6 /* AdsNative.h */,
-				DE9A07B7196D0EBA001944D6 /* ANAdRequest.h */,
-				DE9A07B8196D0EBA001944D6 /* ANAsyncURLConnection.h */,
-				DE9A07B9196D0EBA001944D6 /* ANDeviceInfo.h */,
-				DE9A07BA196D0EBA001944D6 /* ANFullStoryInteractionView.h */,
-				DE9A07BB196D0EBA001944D6 /* ANGetSponsoredStoryRequest.h */,
-				DE9A07BC196D0EBA001944D6 /* ANGetSponsoredStoryResponse.h */,
-				DE9A07BD196D0EBA001944D6 /* ANLogImpressionRequest.h */,
-				DE9A07BE196D0EBA001944D6 /* ANLogTimeSpentRequest.h */,
-				DE9A07BF196D0EBA001944D6 /* ANReachability.h */,
-				DE9A07C0196D0EBA001944D6 /* ANResponse.h */,
-				DE9A07C1196D0EBA001944D6 /* ANServiceProvider.h */,
-				DE9A07C2196D0EBA001944D6 /* ANServiceProviderProtocol.h */,
-				DE9A07C3196D0EBA001944D6 /* ANSponsoredStory.h */,
-				DE9A07C4196D0EBA001944D6 /* ANSponsoredStoryInteractionView.h */,
-				DE9A07C5196D0EBA001944D6 /* libAdsNative-.a */,
+				DEF9A3311977063800B4DC5E /* AdsNative.h */,
+				DEF9A3321977063800B4DC5E /* ANAdRequest.h */,
+				DEF9A3331977063800B4DC5E /* ANAsyncURLConnection.h */,
+				DEF9A3341977063800B4DC5E /* ANDeviceInfo.h */,
+				DEF9A3351977063800B4DC5E /* ANFullStoryInteractionView.h */,
+				DEF9A3361977063800B4DC5E /* ANGetSponsoredStoryRequest.h */,
+				DEF9A3371977063800B4DC5E /* ANGetSponsoredStoryResponse.h */,
+				DEF9A3381977063800B4DC5E /* ANLogImpressionRequest.h */,
+				DEF9A3391977063800B4DC5E /* ANLogTimeSpentRequest.h */,
+				DEF9A33A1977063800B4DC5E /* ANReachability.h */,
+				DEF9A33B1977063800B4DC5E /* ANResponse.h */,
+				DEF9A33C1977063800B4DC5E /* ANServiceProvider.h */,
+				DEF9A33D1977063800B4DC5E /* ANServiceProviderProtocol.h */,
+				DEF9A33E1977063800B4DC5E /* ANSponsoredStory.h */,
+				DEF9A33F1977063800B4DC5E /* ANSponsoredStoryInteractionView.h */,
+				DEF9A3401977063800B4DC5E /* libAdsNative-.a */,
 			);
 			path = AdsNative;
 			sourceTree = "<group>";
