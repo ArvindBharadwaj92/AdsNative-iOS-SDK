@@ -34,7 +34,7 @@ typedef void (^HandleSelectBlock)();
 // Load the ANAdRequest 
 +(void)loadRequest:(ANAdRequest *)request
          onSuccess:(void (^)(ANSponsoredStory *story))success
-           onError:(void (^)(NSError *))error;
+           onError:(void (^)(NSError *error))error;
 
 // Attach the story to a view after the content is rendered
 -(void)attachToView:(UIView *)view onSelect:(HandleSelectBlock)block;
