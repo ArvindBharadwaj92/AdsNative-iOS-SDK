@@ -72,7 +72,9 @@
             [self.tableView reloadData];
         }
         onError:^(NSError *error) {
-              // Oops ad request was not successful
+            // Oops ad request was not successful
+            NSLog(@"NSError Object: %@", error);
+            NSLog(@"Error message: %@", [error.userInfo objectForKey:@"NSLocalizedDescription"]);
         }
     ];
 }
