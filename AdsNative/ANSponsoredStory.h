@@ -29,12 +29,18 @@ typedef void (^HandleSelectBlock)();
 @property (nonatomic,strong) NSString *campaign_id;
 @property (nonatomic,strong) NSString *session_id;
 @property (nonatomic,strong) NSString *zone_id;
-@property (nonatomic,strong) NSString *trackingTags;
+@property (nonatomic,strong) NSString *app_id;
+@property (nonatomic,strong) NSString *tracking_tags;
+@property (nonatomic,strong) NSDictionary *custom_fields;
 
 // Load the ANAdRequest 
 +(void)loadRequest:(ANAdRequest *)request
          onSuccess:(void (^)(ANSponsoredStory *story))success
            onError:(void (^)(NSError *error))error;
+
+// Log click ()
+-(void)logClickOnSuccess:(void (^)(NSData *response))success
+        onError:(void (^)(NSError *))error;
 
 // Attach the story to a view after the content is rendered
 -(void)attachToView:(UIView *)view onSelect:(HandleSelectBlock)block;

@@ -11,8 +11,6 @@
 #import "ANResponse.h"
 #import "ANGetSponsoredStoryRequest.h"
 #import "ANGetSponsoredStoryResponse.h"
-#import "ANLogImpressionRequest.h"
-#import "ANLogTimeSpentRequest.h"
 
 @protocol ANServiceProviderProtocol <NSObject>
 
@@ -21,14 +19,8 @@
                  success:(void (^)(ANGetSponsoredStoryResponse *response))success
                  failure:(void (^)(NSError *error))failure;
 
-// Log impression view
-+(void)logImpression:(ANLogImpressionRequest *)request
-                 success:(void (^)(ANResponse *response))success
-                 failure:(void (^)(NSError *error))failure;
-
-// Log time spent on story
-+(void)logTimeSpent:(ANLogTimeSpentRequest *)request
-             success:(void (^)(ANResponse *response))success
-             failure:(void (^)(NSError *error))failure;
++(void)logClick:(ANSponsoredStory *) sponsoredStory
+        success:(void (^)(NSData *response))success
+        failure:(void (^)(NSError *error))failure;
 
 @end

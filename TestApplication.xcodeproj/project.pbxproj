@@ -87,8 +87,6 @@
 		DE2B485B19920CA600D10266 /* ANFullStoryInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANFullStoryInteractionView.h; sourceTree = "<group>"; };
 		DE2B485C19920CA600D10266 /* ANGetSponsoredStoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryRequest.h; sourceTree = "<group>"; };
 		DE2B485D19920CA600D10266 /* ANGetSponsoredStoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGetSponsoredStoryResponse.h; sourceTree = "<group>"; };
-		DE2B485E19920CA600D10266 /* ANLogImpressionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogImpressionRequest.h; sourceTree = "<group>"; };
-		DE2B485F19920CA600D10266 /* ANLogTimeSpentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANLogTimeSpentRequest.h; sourceTree = "<group>"; };
 		DE2B486019920CA600D10266 /* ANReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANReachability.h; sourceTree = "<group>"; };
 		DE2B486119920CA600D10266 /* ANResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANResponse.h; sourceTree = "<group>"; };
 		DE2B486219920CA600D10266 /* ANServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANServiceProvider.h; sourceTree = "<group>"; };
@@ -230,8 +228,6 @@
 				DE2B485B19920CA600D10266 /* ANFullStoryInteractionView.h */,
 				DE2B485C19920CA600D10266 /* ANGetSponsoredStoryRequest.h */,
 				DE2B485D19920CA600D10266 /* ANGetSponsoredStoryResponse.h */,
-				DE2B485E19920CA600D10266 /* ANLogImpressionRequest.h */,
-				DE2B485F19920CA600D10266 /* ANLogTimeSpentRequest.h */,
 				DE2B486019920CA600D10266 /* ANReachability.h */,
 				DE2B486119920CA600D10266 /* ANResponse.h */,
 				DE2B486219920CA600D10266 /* ANServiceProvider.h */,
