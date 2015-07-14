@@ -36,6 +36,8 @@ Using AdsNative APIs
 1. Add `#import "Adsnative.h"` in your header file whenever you plan to use AdsNative 
 2. Create an ANAdRequest object initializing it with zone id provided to you. You'll have to pass this object to most of requests you make to AdsNative
   ```ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"INSERT-YOUR-ZONE-ID-HERE"];```
+  For keyword targeting,
+  ```ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"INSERT-YOUR-ZONE-ID-HERE" andKeywords:[NSArray arrayWithObjects:@"KEYWORD-1", @"KEYWORD-2", nil]];```
 3. To request for sponsored content make a call to following non-blocking function,
 
     ```
