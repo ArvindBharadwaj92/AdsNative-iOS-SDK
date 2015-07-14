@@ -11,7 +11,8 @@
 
 @interface ANGetSponsoredStoryRequest : NSObject
 
-@property (nonatomic, copy) NSString* adUnitID;
+@property (nonatomic, copy) NSString *adUnitID;
+@property (nonatomic, strong) NSArray *keywords;
 
 +(ANGetSponsoredStoryRequest *)requestWithANAdRequest:(ANAdRequest *)request;
 

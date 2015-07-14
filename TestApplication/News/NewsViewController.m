@@ -62,6 +62,8 @@
 /** Fetch AdsNative native ads **/
 -(void)fetchAds {
     ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"D8TqdJ7Nc8XT5cKIzXqDayoxrrTlOwSxRUX9gslp"];
+    //With Keyword targeting:
+    //ANAdRequest *request = [ANAdRequest requestWithAdUnitID:@"D8TqdJ7Nc8XT5cKIzXqDayoxrrTlOwSxRUX9gslp" andKeywords:[NSArray arrayWithObjects:@"test", nil]];
     [ANSponsoredStory loadRequest:request
         onSuccess:^(ANSponsoredStory *story) {
             if([self.news count]) {

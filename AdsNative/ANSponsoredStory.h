@@ -21,7 +21,6 @@ typedef void (^HandleSelectBlock)();
 @property (nonatomic,strong) NSString *type;
 @property (nonatomic,strong) NSString *promoted_by;
 @property (nonatomic,strong) NSString *promoted_by_tag;
-@property (nonatomic,strong) NSString *brand_image;
 @property (nonatomic,strong) NSString *promoted_by_url;
 @property (nonatomic,strong) NSString *thumbnail_url;
 @property (nonatomic,strong) NSString *embed_url;
@@ -29,18 +28,11 @@ typedef void (^HandleSelectBlock)();
 @property (nonatomic,strong) NSString *campaign_id;
 @property (nonatomic,strong) NSString *session_id;
 @property (nonatomic,strong) NSString *zone_id;
-@property (nonatomic,strong) NSString *app_id;
-@property (nonatomic,strong) NSString *tracking_tags;
-@property (nonatomic,strong) NSDictionary *custom_fields;
 
 // Load the ANAdRequest 
 +(void)loadRequest:(ANAdRequest *)request
          onSuccess:(void (^)(ANSponsoredStory *story))success
-           onError:(void (^)(NSError *error))error;
-
-// Log click ()
--(void)logClickOnSuccess:(void (^)(NSData *response))success
-        onError:(void (^)(NSError *))error;
+           onError:(void (^)(NSError *))error;
 
 // Attach the story to a view after the content is rendered
 -(void)attachToView:(UIView *)view onSelect:(HandleSelectBlock)block;

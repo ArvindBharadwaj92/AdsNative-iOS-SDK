@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSDictionary *parameters;
 
 +(ANAdRequest *)requestWithAdUnitID:(NSString *)adUnitID;
++(ANAdRequest *)requestWithAdUnitID:(NSString *)aAdUnitID andKeywords:(NSArray *)aKeywords;
 
 +(NSString *)sdkVersion;
 

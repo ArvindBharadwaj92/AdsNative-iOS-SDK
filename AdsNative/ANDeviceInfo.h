@@ -28,6 +28,4 @@
 
 +(NSString *)getODIN1;
 
-+(NSString *)getAppID;
-
 @end
