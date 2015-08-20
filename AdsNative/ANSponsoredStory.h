@@ -22,6 +22,7 @@ typedef void (^HandleSelectBlock)();
 @property (nonatomic,strong) NSString *promoted_by;
 @property (nonatomic,strong) NSString *promoted_by_tag;
 @property (nonatomic,strong) NSString *promoted_by_url;
+@property (nonatomic,strong) NSString *brand_image_url;
 @property (nonatomic,strong) NSString *thumbnail_url;
 @property (nonatomic,strong) NSString *embed_url;
 @property (nonatomic,strong) NSString *creative_id;
